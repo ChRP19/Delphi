@@ -1,0 +1,93 @@
+object fDiag: TfDiag
+  Left = 1832
+  Top = 85
+  BorderStyle = bsSingle
+  Caption = #1044#1080#1072#1075#1088#1072#1084#1084#1072
+  ClientHeight = 448
+  ClientWidth = 683
+  Color = clCream
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Chart1: TChart
+    Left = 0
+    Top = 0
+    Width = 683
+    Height = 393
+    AllowPanning = pmNone
+    AllowZoom = False
+    AnimatedZoomSteps = 10
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    BackWall.Pen.Visible = False
+    MarginBottom = 0
+    MarginLeft = 5
+    MarginRight = 0
+    MarginTop = 20
+    PrintProportional = False
+    Title.Text.Strings = (
+      #1056#1072#1089#1095#1077#1090' '#1088#1072#1073#1086#1090#1085#1080#1082#1086#1074' '#1082#1072#1078#1076#1086#1075#1086' '#1086#1090#1076#1077#1083#1072)
+    Title.Visible = False
+    AxisVisible = False
+    Chart3DPercent = 45
+    ClipPoints = False
+    Frame.Visible = False
+    LeftAxis.Title.Caption = #1050#1086#1083#1083#1080#1095#1077#1089#1090#1074#1086' '#1089#1086#1090#1088#1091#1076#1085#1080#1082#1086#1074' '#1082#1072#1078#1076#1086#1075#1086' '#1086#1090#1076#1077#1083#1072
+    Legend.Alignment = laLeft
+    Legend.ColorWidth = 20
+    Legend.Font.Charset = DEFAULT_CHARSET
+    Legend.Font.Color = clBlack
+    Legend.Font.Height = -13
+    Legend.Font.Name = 'Arial'
+    Legend.Font.Style = []
+    Legend.LegendStyle = lsValues
+    Legend.ResizeChart = False
+    Legend.ShadowSize = 1
+    Legend.TopPos = 3
+    View3DOptions.Elevation = 315
+    View3DOptions.HorizOffset = -38
+    View3DOptions.Orthogonal = False
+    View3DOptions.Perspective = 0
+    View3DOptions.Rotation = 360
+    View3DOptions.VertOffset = 41
+    View3DOptions.Zoom = 95
+    View3DOptions.ZoomText = False
+    View3DWalls = False
+    Align = alTop
+    TabOrder = 0
+    object Series1: TPieSeries
+      Marks.ArrowLength = 8
+      Marks.Style = smsValue
+      Marks.Visible = True
+      SeriesColor = clRed
+      Circled = True
+      OtherSlice.Text = 'Other'
+      PieValues.DateTime = False
+      PieValues.Name = 'Pie'
+      PieValues.Multiplier = 1.000000000000000000
+      PieValues.Order = loAscending
+    end
+  end
+  object Button1: TButton
+    Left = 232
+    Top = 408
+    Width = 185
+    Height = 33
+    Caption = #1055#1086#1082#1072#1079#1072#1090#1100' '#1076#1080#1072#1075#1088#1072#1084#1084#1091
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Calibri'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end
